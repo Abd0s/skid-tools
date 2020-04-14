@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Abd0s/skidtools.svg?branch=master)](https://travis-ci.org/Abd0s/skidtools)
+
 ## skid-tools
 A collection of utilities and tools to rapidly develop CLI programs. It aims to get rid of boilerplate and aid skiddies.
 
