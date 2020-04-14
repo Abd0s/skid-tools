@@ -1,0 +1,17 @@
+language: python
+
+install:
+  - pip install mkdocs-material mkdocs-redirects pymdown-extensions
+  - pip install -r requirements.txt
+
+script:
+  - mkdocs build --clean --strict
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: ${GH_TOKEN}
+  local_dir: site
+  fqdn: docs.retest.de
+  on:
+    branch: master
