@@ -6,12 +6,12 @@ install:
 
 script:
   - mkdocs build --clean --strict
+  cd docs
 
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: site
-  fqdn: docs.retest.de
+  local_dir: docs/build
   on:
     branch: master
