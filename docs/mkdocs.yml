@@ -35,12 +35,43 @@ extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/Abd0s
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/squidfunk
+    - icon: fontawesome/solid/flask
+      link: https://labs.clast.dev
+    - icon: fontawesome/solid/home
+      link: https://clast.dev
+
+# Extensions
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+
+  # PyMdown
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
+
 # Plugins
 plugins:
   - search
   - minify:
       minify_html: true
+
