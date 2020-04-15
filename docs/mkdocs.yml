@@ -31,6 +31,14 @@ theme:
   logo: assets/logo.svg
   favicon: assets/logo.png
 
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Abd0s
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/squidfunk
 # Plugins
 plugins:
   - search
