@@ -1,12 +1,22 @@
 <p align="center">
-  <img width="600" height="200" src="brand_assets/covor_4.png">
+    <a href="https://docs.clast.dev/skidtools>
+    <img width="600" height="200" src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/brand_assets/covor_4.png">
 </p>
 
-[![Build Status](https://travis-ci.org/Abd0s/skidtools.svg?branch=master)](https://travis-ci.org/Abd0s/skidtools)
-[![HitCount](http://hits.dwyl.com/Abd0s/skidtools.svg)](http://hits.dwyl.com/Abd0s/skidtools)
+<p align="center">
+  <a href="https://travis-ci.org/Abd0s/skidtools"><img
+    src="https://travis-ci.org/Abd0s/skidtools.svg?branch=master"
+    alt="Travis CI"
+  /></a>
+  <a href="http://hits.dwyl.com/Abd0s/skidtools"><img
+    src="http://hits.dwyl.com/Abd0s/skidtools.svg" 
+    alt="Hits"
+  /></a>
+</p>
 
-# skid-tools
-A collection of utilities and tools to rapidly develop CLI programs. It aims to get rid of boilerplate and aid skiddies.
+<p align="center">
+  A collection of utilities and tools to rapidly develop CLI programs. It aims to get rid of boilerplate and aid skiddies.
+</p>
 
 ## Catagories
 skid-tools is orginized into the following diffrent catagories:
