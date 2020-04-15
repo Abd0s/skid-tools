@@ -1,0 +1,10 @@
+font name: Fonarto
+font link: https://www.behance.net/gallery/20085723/Fonarto-Typeface
+font author: Arwan Sutanto
+font author site: http://artonedigital.com/
+
+
+icon designer: Ben Davis
+icon designer link: /smashicons
+        
+{"bg":"#411640","icon":"#DCB933","font":"#FFFFFF","slogan":"#ffffff"}
