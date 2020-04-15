@@ -6,7 +6,7 @@ install:
 
 script:
   - mkdocs build --clean --strict
-  cd docs
+  - cd docs
 
 deploy:
   provider: pages
