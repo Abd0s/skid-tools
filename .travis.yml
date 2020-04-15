@@ -15,6 +15,6 @@ deploy:
   allow_empty_commit: true
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: site
+  local_dir: docs/site
   on:
     branch: master
