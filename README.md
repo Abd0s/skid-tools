@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://docs.clast.dev/skidtools>
-    <img width="600" height="200" src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/brand_assets/covor_4.png">
+    <img width="600" height="200" src="https://raw.githubusercontent.com/Abd0s/skidtools/master/brand_assets/cover_4.png">
 </p>
 
 <p align="center">
