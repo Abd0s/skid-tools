@@ -1,35 +1,39 @@
 # Project information
-site_name: Skidtools Docs
-site_url: https://clast.dev
+site_name: Skidtools 
+site_url: https://docs.clast.dev/skidtools
 site_author: Abdos
 site_description: >-
   A collection of utilities and tools to rapidly develop CLI programs. It aims to get rid of boilerplate and aid skiddies.
 # Repository
 repo_name: Abd0s/skidtools
 repo_url: https://github.com/Abd0s/skidtools
-edit_uri: ""
 
 # Copyright
 copyright: Copyright &copy; 2020 Clast
+
+# Nav
+nav:
+  - Introduction: "index.md"
+  - test: "test.md"
 
 # Configuration
 theme:
   name: material
   features:
     - instant
-  #  - tabs
+    - tabs
 
   language: en
-  palette:
-    primary: purple
-    accent: purple
   font:
     text: Roboto
     code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
-  logo: assets/logo.svg
-  favicon: assets/logo.png
+  logo: assets/icon.svg
+  favicon: assets/icon.png
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   social:

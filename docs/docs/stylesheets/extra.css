@@ -1,0 +1,36 @@
+:root {
+
+    /* Default color shades */
+    --md-default-fg-color:               hsla(0, 0%, 0%, 0.87);
+    --md-default-fg-color--light:        hsla(0, 0%, 0%, 0.54);
+    --md-default-fg-color--lighter:      hsla(0, 0%, 0%, 0.26);
+    --md-default-fg-color--lightest:     hsla(0, 0%, 0%, 0.07);
+    --md-default-bg-color:               hsla(0, 0%, 100%, 1);
+    --md-default-bg-color--light:        hsla(0, 0%, 100%, 0.7);
+    --md-default-bg-color--lighter:      hsla(0, 0%, 100%, 0.3);
+    --md-default-bg-color--lightest:     hsla(0, 0%, 100%, 0.12);
+
+    /* Primary color shades */
+    --md-primary-fg-color: #411640;
+    --md-primary-fg-color--light: #6d3f6b;
+    --md-primary-fg-color--dark: #1e001a;
+    --md-primary-bg-color: hsla(0, 0%, 100%, 1);
+    --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+
+    /* Accent color shades */ 
+    --md-accent-fg-color: #DB00DB;
+    --md-accent-fg-color--transparent: hsla(#DB00DB, 0.1);
+    --md-accent-bg-color: hsla(0, 0%, 100%, 0.7);
+    --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
+
+}
+
+@font-face {
+    font-family: LogoFont;
+    src: url(Fonarto.ttf);
+}
+
+.md-header-nav__title {
+    font-family: LogoFont;
+    font-size: 1.2rem;
+}

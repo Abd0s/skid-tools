@@ -31,7 +31,7 @@ skid-tools is orginized into the following diffrent catagories:
 
 ## Examples
 comming soon
-## Documantation
+## Documentation
 https://docs.clast.dev/skidtools/
 ## License
 Abd0s/skidtools is licensed under the [GNU General Public License v3.0](https://github.com/Abd0s/skidtools/blob/master/LICENSE)
