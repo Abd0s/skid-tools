@@ -12,6 +12,10 @@
     src="http://hits.dwyl.com/Abd0s/skidtools.svg" 
     alt="Hits"
   /></a>
+   <a href="https://img.shields.io/badge/License-GPLv3-blue.svg"><img
+    src="https://www.gnu.org/licenses/gpl-3.0" 
+    alt="License"
+  /></a>
 </p>
 
 <p align="center">
@@ -20,12 +24,14 @@
 
 ## Catagories
 skid-tools is orginized into the following diffrent catagories:
-    - IO
-    - Logging
-    - Parsing
-    - .. More to come
+- IO
+- Logging
+- Parsing
+- .. More to come
 
 ## Examples
 comming soon
 ## Documantation
-comming soon
+https://docs.clast.dev/skidtools/
+## License
+Abd0s/skidtools is licensed under the [GNU General Public License v3.0](https://github.com/Abd0s/skidtools/blob/master/LICENSE)
