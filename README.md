@@ -12,8 +12,8 @@
     src="http://hits.dwyl.com/Abd0s/skidtools.svg" 
     alt="Hits"
   /></a>
-   <a href="https://img.shields.io/badge/License-GPLv3-blue.svg"><img
-    src="https://www.gnu.org/licenses/gpl-3.0" 
+   <a href="https://www.gnu.org/licenses/gpl-3.0"><img 
+    src="https://img.shields.io/badge/License-GPLv3-blue.svg" 
     alt="License"
   /></a>
 </p>
