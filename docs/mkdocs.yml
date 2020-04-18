@@ -95,7 +95,6 @@ markdown_extensions:
 # Plugins
 plugins:
   - search
-  - awesome-pages
   - minify:
       minify_html: true
 
