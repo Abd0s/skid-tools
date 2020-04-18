@@ -14,12 +14,15 @@ copyright: Copyright &copy; 2020 Clast
 
 # Page tree
 nav:
-  - Home: "index.md"
-  - Why skidtools: "why-skidtools.md"
-  - Getting started: "getting-started.md"
-  - Commands: "commands.md"
-  - Modules: "modules.md"
-  - Configuration: "config.md"  
+  - Home: 
+    - Introduction: "index.md"
+    - Getting started: "home/getting-started.md"
+    - Commands: "home/commands.md"
+    - Modules: "home/modules.md"
+    - Configuration: "home/config.md"
+    - Tests: "home/tests.md"
+    - Contributing: "home/contributing.md"
+    - License: "home/license.md"
   - Modules:
       - IO: "modules/io.md"
       - Logging: "modules/logging.md"
@@ -28,11 +31,10 @@ nav:
       - IO: "api-reference/reference-io.md"
       - Logging: "api-reference/reference-logging.md"
       - Parsing: "api-reference/reference-parsing.md"
+      - Exceptions: "api-reference/reference-exceptions.md"
   - Releases:
     - Changelog: "releases/changelog.md"
-  - Tests: "tests.md"
-  - Contributing: "contributing.md"
-  - License: "license.md"
+
   
 
 # Configuration
