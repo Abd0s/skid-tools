@@ -4,6 +4,7 @@ site_url: https://docs.clast.dev/skidtools
 site_author: Abdos
 site_description: >-
   A collection of utilities and tools to rapidly develop CLI programs. It aims to get rid of boilerplate and aid skiddies.
+
 # Repository
 repo_name: Abd0s/skidtools
 repo_url: https://github.com/Abd0s/skidtools
@@ -11,10 +12,28 @@ repo_url: https://github.com/Abd0s/skidtools
 # Copyright
 copyright: Copyright &copy; 2020 Clast
 
-# Nav
+# Page tree
 nav:
-  - Introduction: "index.md"
-  - test: "test.md"
+  - Home: "index.md"
+  - Why skidtools: "why-skidtools.md"
+  - Getting started: "getting-started.md"
+  - Commands: "commands.md"
+  - Modules: "modules.md"
+  - Configuration: "config.md"  
+  - Modules:
+      - IO: "modules/io.md"
+      - Logging: "modules/logging.md"
+      - Parsing: "modules/parsing.md"
+  - API reference:
+      - IO: "api-reference/reference-io.md"
+      - Logging: "api-reference/reference-logging.md"
+      - Parsing: "api-reference/reference-parsing.md"
+  - Releases:
+    - Changelog: "releases/changelog.md"
+  - Tests: "tests.md"
+  - Contributing: "contributing.md"
+  - License: "license.md"
+  
 
 # Configuration
 theme:
@@ -33,7 +52,7 @@ theme:
   favicon: assets/icon.png
 
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
 
 extra:
   social:
@@ -76,6 +95,12 @@ markdown_extensions:
 # Plugins
 plugins:
   - search
+  - awesome-pages
   - minify:
       minify_html: true
+
+# Google Analytics
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS"]
+  - auto
 
