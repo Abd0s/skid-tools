@@ -1,6 +1,7 @@
 from typing import Any, List, Dict
 from colorama import init, Fore, Style
 init(autoreset=True)
+from tqdm import tqdm # type: ignore
 
 def colored_print(text: str, color: str) -> str:
 
@@ -33,3 +34,21 @@ def validated_input(text: str, _type: Any) -> Any:
             print(f"{colored_print('[-]', 'RED')} Invalid input, must be of type {_type.__name__}")
 
     return converted_input
+
+def load_combos(filename: str = "combos.txt", seperator: str = ":", visualizer: bool = True) -> List[Dict[str, str]]:
+    
+    with open(filename, "r") as f:
+        lines: List[str] = f.read().splitlines()
+
+    combos: List[Dict[str, str]] = []    
+   
+    if visualizer:
+        lines = tqdm(lines, desc=f"{colored_print('[+]', 'blue')} Loading and parsing combos", ncols=100)
+
+    for line in lines:
+        combo: List[str] = line.split(seperator)
+        combo_dict: Dict[str, str] = {"email": combo[0], "password": combo[1]}
+        combos.append(combo_dict)
+    
+    return combos
+

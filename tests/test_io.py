@@ -11,8 +11,6 @@ class ColoredPrintTestCase(unittest.TestCase):
     def test_construct_string(self):
         self.assertEqual(sio.colored_print("test text", "green"), "\x1b[32mtest text\x1b[0m")
 
-
-
 class ValidatedInputTestCase(unittest.TestCase):
 
     def invalid_type(self):
@@ -32,6 +30,14 @@ class ValidatedInputTestCase(unittest.TestCase):
     @mock.patch("builtins.input", return_value="a string")
     def test_conversion_str(self, input):
         self.assertEqual(sio.validated_input("test text", str), "a string")
-        
+
+class LoadCombosTestCase(unittest.TestCase):
+
+    @mock.patch('builtins.open', create=True)
+    def test_load_combos(self, mock_open):
+        sio.load_combos()
+        mock_open.assert_called_with("combos.txt", "r")
+
+ 
 if __name__ == '__main__':
     unittest.main()
