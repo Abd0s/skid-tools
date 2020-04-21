@@ -24,4 +24,4 @@ logging.info(f"{len(combos)} combos loaded")
 
 ## For who skidtools is **NOT**
 
-You are looking to make a full fledge application with proper configurabititle. While skidtools could work for you, it's not recommended, because you might need a level of control which skidtools doesn't provide. Eg. you want to use your own formatting for logging and outputs in general.
+You are looking to make a full fledge application with proper configurability. While skidtools could work for you, it's not recommended. You will likely need a level of control which skidtools doesn't provide. Eg. you want to use your own formatting for logging and outputs in general.

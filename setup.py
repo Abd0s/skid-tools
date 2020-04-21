@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="skidtools-Abdos", # Replace with your own username
-    version="0.0.1",
+    version="0.0.1a1",
     author="Abdos",
     author_email="start2gameing@gmail.com",
     description="A small utility package to reduce boilerplate code in skid scripts",
     long_description= long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/Abd0s/skidtools/",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

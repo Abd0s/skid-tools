@@ -17,9 +17,9 @@ nav:
   - Home: 
     - Introduction: "index.md"
     - Getting started: "home/getting-started.md"
-    - Commands: "home/commands.md"
+    - CLI Commands: "home/commands.md"
     - Modules: "home/modules.md"
-    - Configuration: "home/config.md"
+    - Configuration: "home/configuration.md"
     - Tests: "home/tests.md"
     - Contributing: "home/contributing.md"
     - License: "home/license.md"

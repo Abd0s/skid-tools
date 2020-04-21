@@ -1,6 +1,6 @@
 # Default config for skidtool
-# See documumention for details
-# github...
+# See documumention for details docs.clast.dev/skidtools/home/config/
+# https://github.com/Abd0s/skidtools/
 
 # general
 version: str = "0.0.1"
