@@ -7,7 +7,7 @@ setuptools.setup(
     name="skidtools-Abdos", # Replace with your own username
     version="0.0.1a1",
     author="Abdos",
-    author_email="start2gameing@gmail.com",
+    author_email="admin.dev@clast.dev",
     description="A small utility package to reduce boilerplate code in skid scripts",
     long_description= long_description,
     long_description_content_type="text/markdown",

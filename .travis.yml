@@ -9,6 +9,7 @@ script:
   - python -m unittest discover
   - cd docs
   - mkdocs build --clean --strict
+  - cd ..
   
 
 deploy:
