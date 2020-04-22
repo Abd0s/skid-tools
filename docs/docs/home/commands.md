@@ -1,6 +1,6 @@
 # CLI Commands
 
-Skidtools comes with a few CLI commands. You can use them as follows
+Skidtools comes with a few CLI commands. You can use them as follows.
 
 ``` sh
 python -m skidtools <command>

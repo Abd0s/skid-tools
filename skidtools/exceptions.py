@@ -12,6 +12,10 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 
+""" Libary specific exceptions
+
+These exceptions are raised when no appropriate Built-in exception exists.
+"""
 class MissingConfigFile(IOError):
-    'Missing config file'
+    """Raised when no config.py file is found"""
     pass

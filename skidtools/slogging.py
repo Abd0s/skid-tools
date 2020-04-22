@@ -12,6 +12,19 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 
+""" Wrapper around the standard logging module.
+
+Using the logging module can be very benefitiucal, but it often requres alot of setup code to get the desired features.
+This submodule wraps the standard logging module with a defualt configuration while also adding CLI options and flags with very little code.
+
+Typical usage example:
+    from skidtools import slogging
+    import logging
+
+    init_logging()
+    logging.error("An error happend!")
+"""
+
 from typing import Dict, List, Union, Optional
 import logging
 from datetime import datetime

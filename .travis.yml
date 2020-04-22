@@ -19,3 +19,14 @@ deploy:
   local_dir: docs/site
   on:
     branch: master
+
+deploy:
+  provider: pypi
+  username: Abdos
+  password: $PIPY_PW
+  edge: true # opt in to dpl v2
+  server: https://test.pypi.org/legacy/
+
+  on:
+    branch: release
+    tags: pipy

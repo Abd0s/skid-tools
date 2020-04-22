@@ -97,7 +97,7 @@ else:
 logging.debug("done addition")
 ```
 
-Running this with
+Running this with:
 
 ``` sh
 python example.py

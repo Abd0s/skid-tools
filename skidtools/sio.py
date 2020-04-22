@@ -12,6 +12,17 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 
+""" A collection of functions that handle commen IO task
+
+Contains a collection of utility functions designed to speed up commen IO cases such as loading combos or printing text with color
+
+Typical usage example:
+    from skidtools import sio
+
+    combos = load_combos()
+    # Do stuff with the combos
+"""
+
 from typing import Any, List, Dict
 from colorama import init, Fore, Style
 init(autoreset=True)
@@ -23,10 +34,11 @@ def colored_print(text: str, color: str) -> str:
     Adds ANSI escape character sequences (for producing colored terminal prints) to the given string.
 
     Args:
-        text: Text to color
-        color: Color to apply to the given text. List of available colors: green, red, blue, cyan, yellow, pink
+        text: Text to color.
+        color: Color to apply to the given text. List of available colors: green, red, blue, cyan, yellow, pink.
+
     Returns:
-        A string which contains the original text wrapped in ANSI escape characters
+        A string which contains the original text wrapped in ANSI escape characters.
     """
 
     if color.upper() == "GREEN":
@@ -44,8 +56,18 @@ def colored_print(text: str, color: str) -> str:
     else:
         raise ValueError("Invalid argument: color")
 
-def validated_input(text: str, _type: Any) -> Any:
-    """
+def validated_input(text: str, _type: Union[int, str, float]) -> Union[int, str, float]:
+    """ Extension of the builtin input() function.
+
+    Loops input() until it's return value is convertable to the given _type. P
+    rints an error message with the correct type if given input isn't convertable wrong type is entered.
+
+    Args:
+        text: The text that should be printed with the input
+        _type: The type the input should be validated and converted to.
+
+    Returns:
+        The CLI input converted to the given _type.
     """
     convertable_types: List[str] = [int, str, float]
     if _type not in convertable_types:
@@ -61,7 +83,21 @@ def validated_input(text: str, _type: Any) -> Any:
     return converted_input
 
 def load_combos(filename: str = "combos.txt", seperator: str = ":", visualizer: bool = True) -> List[Dict[str, str]]:
-    
+    """ Loads and parses a combo formatted textfile
+
+    Loads a file which contains password:email formatted data seperated with a seperator ":" by default.
+
+    Args:
+        filename: Path of the file that should be loaded, defaults to combos.txt.
+        seperator: Characters that seperate the email and password part of a combo, defaults to :.
+        visualizer: Progresbar that shows the loading and parsing progres using the tqdm package.
+
+    Returns:
+        A List of dicts mapping with keys email and password. For example {"email": "example@email.com", "password": "password"}
+
+    Raises:
+        FileNotFoundError: Couldn't find a file with given filename.
+    """
     with open(filename, "r") as f:
         lines: List[str] = f.read().splitlines()
 
