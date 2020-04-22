@@ -23,7 +23,7 @@ Typical usage example:
     # Do stuff with the combos
 """
 
-from typing import Any, List, Dict
+from typing import Any, List, Dict, Union
 from colorama import init, Fore, Style
 init(autoreset=True)
 from tqdm import tqdm # type: ignore
