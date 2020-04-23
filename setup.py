@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="skidtools-Abdos", # Replace with your own username
+    name="Skidtools", # Replace with your own username
     version="0.0.1a1",
     author="Abdos",
     author_email="admin.dev@clast.dev",
