@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="Skidtools", # Replace with your own username
+    name="skidtools", # Replace with your own username
     version="0.0.1a1",
     author="Abdos",
     author_email="admin.dev@clast.dev",
@@ -17,7 +17,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
-        "Development Status :: 2 - Pre-Alpha",
+        "Development Status :: 3 - Alpha",
         "Environment :: Console",
         "Topic :: Utilities",
         "Typing :: Typed"

@@ -16,7 +16,7 @@
     src="https://img.shields.io/badge/License-GPLv3-blue.svg" 
     alt="License"
   /></a>
-  <a href=""><img 
+  <a href="https://pypi.org/project/Skidtools/"><img 
     alt="PyPI" 
     src="https://img.shields.io/pypi/v/skidtools"
   /></a>
@@ -26,9 +26,6 @@
   A collection of utilities and tools to rapidly develop CLI programs. It aims to get rid of boilerplate and aid skiddies.
 </p>
 
-Getting started
----------------
-
 ## Prerequisites
 
 Skidtools works with Python 3.6 or higher. Support for earlier versions of Python is not provided. Python 2.7 or lower is not supported. 
@@ -37,7 +34,7 @@ Skidtools works with Python 3.6 or higher. Support for earlier versions of Pytho
 
 While there are several ways of installing Skidtools, the recommended method is by using `pip` - the Python package manager.
 
-### with pip <small>recommended</small>
+### with pip recommended
 
 Skidtools can be installed with `pip`:
 
