@@ -14,7 +14,7 @@
 
 """ Wrapper around the standard logging module.
 
-Using the logging module can be very benefitiucal, but it often requres alot of setup code to get the desired features.
+Using the logging module can be very beneficial, but it often requres alot of setup code to get the desired result.
 This submodule wraps the standard logging module with a defualt configuration while also adding CLI options and flags with very little code.
 
 Typical usage example:
@@ -27,10 +27,13 @@ Typical usage example:
 
 from typing import Dict, List, Union, Optional
 import logging
+
 from datetime import datetime
 import pathlib
 import config
 import sys
+
+from . import sio
 
 def init_logging(sys_arg: List[str] = sys.argv) -> None:
     """Initializes the logging module
@@ -82,14 +85,43 @@ def init_logging(sys_arg: List[str] = sys.argv) -> None:
     # Logging
     log_filename: str = "D" + datetime.now().isoformat('T', 'seconds').replace(':', '-')
 
-    if config.log_to_file:
-        pathlib.Path("./logs").mkdir(parents=True, exist_ok=True)
-        if config.debug:
-            logging.basicConfig(filename=f"logs/{log_filename}.log", filemode='w', level=logging.DEBUG)
-        else:
-            logging.basicConfig(filename=f'logs/{log_filename}.log', filemode='w', level=logging.INFO)
+    if config.debug:
+        logging.root.setLevel(logging.DEBUG)
     else:
-        if config.debug:
-            logging.basicConfig(level=logging.DEBUG)
-        else:
-            logging.basicConfig(level=logging.INFO)
+        logging.root.setLevel(logging.INFO)
+
+    if config.log_to_file:
+        # Make dir if it doesn't exist
+        pathlib.Path("./logs").mkdir(parents=True, exist_ok=True)
+
+        # define file handler and configure
+        file_handler: logging.FileHandler = logging.FileHandler(filename=f"logs/{log_filename}.log", mode="w")
+        formatter: logging.Formatter = logging.Formatter("%(asctime)s %(name)-12s %(levelname)-8s %(funcName)-12s %(lineno)-4s %(message)s", datefmt='%Y-%m-%d %H:%M:%S')
+        file_handler.setFormatter(formatter)
+
+        # add the handler to the root logger
+        logging.root.addHandler(file_handler)
+        
+    # define console handler and configure
+    console_handler: logging.StreamHandler = logging.StreamHandler()
+    console_handler.setFormatter(ConsoleFormatter())
+
+    # add the handler to the root logger
+    logging.root.addHandler(console_handler)
+
+class ConsoleFormatter(logging.Formatter):
+    """Logging Formatter to add colors and formatting"""
+
+    FORMATS = {
+        logging.CRITICAL: f"[{sio.colored_print('CRITICAL', 'yellow')}] %(name)s: %(message)s",
+        logging.ERROR: f"[{sio.colored_print('ERROR', 'red')}] %(name)s: %(message)s",
+        logging.WARNING: f"[{sio.colored_print('WARNING', 'pink')}] %(name)s: %(message)s",
+        logging.INFO : f"[{sio.colored_print('INFO', 'blue')}] %(name)s: %(message)s",
+        logging.DEBUG: f"[{sio.colored_print('DEBUG', 'cyan')}] %(name)s: %(message)s",
+        "DEFAULT": "[LOG]: %(name)s: %(msg)s",
+    }
+
+    def format(self, record: logging.LogRecord) -> str:
+        log_fmt = self.FORMATS.get(record.levelno, self.FORMATS['DEFAULT'])
+        formatter = logging.Formatter(log_fmt)
+        return formatter.format(record)
