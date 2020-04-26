@@ -19,14 +19,13 @@ deploy:
   github_token: $GITHUB_TOKEN
   local_dir: docs/site
   on:
-    branch: master
+    branch: dev
 
 deploy:
   provider: pypi
   username: Abdos
   password: $PIPY_PW
   edge: true # opt in to dpl v2
-  server: https://test.pypi.org/legacy/
 
   on:
-    branch: release
+    branch: master
