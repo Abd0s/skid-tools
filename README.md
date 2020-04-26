@@ -16,8 +16,13 @@
     src="https://img.shields.io/badge/License-GPLv3-blue.svg" 
     alt="License"
   /></a>
+  <a href=""><img 
+    alt="PyPI" 
+    src="https://img.shields.io/pypi/v/skidtools"
+  /></a>
 </p>
 
+https://img.shields.io/pypi/v/skidtools
 <p align="center">
   A collection of utilities and tools to rapidly develop CLI programs. It aims to get rid of boilerplate and aid skiddies.
 </p>
