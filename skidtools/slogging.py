@@ -27,18 +27,26 @@ Typical usage example:
 
 from typing import Dict, List, Union, Optional
 import logging
-
 from datetime import datetime
 import pathlib
-import config
 import sys
 
+from .exceptions import MissingConfigFile
 from . import sio
+
+
+# a config.py file is required for this mnodule
+try:
+    import config
+except ModuleNotFoundError:
+    raise MissingConfigFile("No config.py file found, use --init to initilize one.")
+
 
 def init_logging(sys_arg: List[str] = sys.argv) -> None:
     """Initializes the logging module
 
-    Initializes the root logger of the logging module with the following CLI arguments:
+    Initializes the root logger of the logging module with support for the following CLI arguments and config.py configuration:
+
     Options:
         "--version": prints the version provided in config.py
         "--help": prints the help string provided in config.py
