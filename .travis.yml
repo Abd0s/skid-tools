@@ -7,25 +7,19 @@ install:
 script:
   - python skidtools --init
   - python -m unittest discover
-  - cd docs
   - mkdocs build --clean --strict
-  - cd ..
   
 
 deploy:
-  provider: pages
-  allow_empty_commit: true
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: docs/site
-  on:
-    branch: dev
+  - provider: pages
+    allow_empty_commit: true
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: site
+  - provider: pypi
+    username: Abdos
+    password: $PIPY_PW
+    edge: true # opt in to dpl v2
 
-deploy:
-  provider: pypi
-  username: Abdos
-  password: $PIPY_PW
-  edge: true # opt in to dpl v2
-
-  on:
-    branch: master
+    on:
+      branch: master

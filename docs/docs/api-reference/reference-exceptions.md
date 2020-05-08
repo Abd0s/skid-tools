@@ -1,0 +1,3 @@
+# Reference
+
+::: skidtools.exceptions

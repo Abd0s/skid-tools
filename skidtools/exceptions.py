@@ -14,7 +14,7 @@
 
 """ Libary specific exceptions
 
-These exceptions are raised when no appropriate Built-in exception exists.
+These exceptions are raised when no appropriate builtin exception exists.
 """
 class MissingConfigFile(Exception):
     """Raised when no config.py file is found"""
