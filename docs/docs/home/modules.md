@@ -7,4 +7,5 @@ To avoid the modules conflicting with the builtin pakages like IO or logging all
 
 - [IO](../modules/io.md)
 - [Logging](../modules/logging.md)
-- [Parsing](../modules/parsing.md)
+- [Parsing](../modules/parsing.md) (comming soon)
+- [Factory](../modules/parsing.md)

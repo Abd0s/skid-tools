@@ -12,15 +12,17 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 
-""" A collection of functions that handle commen IO task
+""" A collection of functions to handle commen IO task
 
 Contains a collection of utility functions designed to speed up commen IO cases such as loading combos or printing text with color
 
 Typical usage example:
-    from skidtools import sio
+```python
+from skidtools import sio
 
-    combos = load_combos()
-    # Do stuff with the combos
+combos = load_combos()
+# Do stuff with the combos
+```
 """
 
 from typing import Any, List, Dict, Union
