@@ -26,7 +26,7 @@ with open("requirements.txt") as data:
 
 setuptools.setup(
     name="skidtools", # Replace with your own username
-    version="0.0.1a2",
+    version="0.0.1a3",
     author="Abdos",
     author_email="admin.dev@clast.dev",
     description="A small utility package to reduce boilerplate code in skid scripts",
