@@ -7,9 +7,7 @@ install:
 script:
   - python skidtools --init
   - python -m unittest discover
-  - cd docs
   - mkdocs build --clean --strict
-  - cd ..
   
 
 deploy:
@@ -18,8 +16,6 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: docs/site
-  on:
-    branch: dev
 
 deploy:
   provider: pypi

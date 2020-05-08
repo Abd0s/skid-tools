@@ -87,7 +87,7 @@ from skidtools import slogging
 import logging
 import sys
 
-slogging.init_logging(sys.argv)
+slogging.init_logging()
 
 if 3 + 2 == 5:
   logging.succes("3 + 2 is equal to 5")
@@ -106,14 +106,14 @@ python example.py
 Will output:
 
 ``` sh
-INFO:root:3 + 2 is equal to 5
+[INFO] root: 3 + 2 is equal to 5
 ```
 
 if we run this with the `-d` flag, it will now output the logs on debug level.
 
 ``` sh
-INFO:root:3 + 2 is equal to 5
-DEBUG:root:done addition
+[INFO] root: 3 + 2 is equal to 5
+[DEBUG] root: done addition
 ```
 
 For further reference: [More about modules](modules.md)

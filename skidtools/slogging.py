@@ -16,13 +16,16 @@
 
 Using the logging module can be very beneficial, but it often requres alot of setup code to get the desired result.
 This submodule wraps the standard logging module with a defualt configuration while also adding CLI options and flags with very little code.
+A config.py file is required for this module.
 
 Typical usage example:
-    from skidtools import slogging
-    import logging
+```python
+from skidtools import slogging
+import logging
 
-    init_logging()
-    logging.error("An error happend!")
+init_logging()
+logging.error("An error happend!")
+```
 """
 
 from typing import Dict, List, Union, Optional
@@ -45,14 +48,14 @@ except ModuleNotFoundError:
 def init_logging(sys_arg: List[str] = sys.argv) -> None:
     """Initializes the logging module
 
-    Initializes the root logger of the logging module with support for the following CLI arguments and config.py configuration:
+    Initializes the root logger of the logging module with support for the following CLI arguments (overwrites config.py):
 
     Options:
-        "--version": prints the version provided in config.py
-        "--help": prints the help string provided in config.py
+        --version: prints the version provided in config.py
+        --help: prints the help string provided in config.py
     Flags:
-        "-d": Sets the logging level to debug
-        "-f": Write the logging output to a logfile instead of sysout.
+        -d: Sets the logging level to debug
+        -f: Write the logging output to a logfile instead of sysout.
 
     Args:
         sys_arg: A list of system CLI arguments, defaults to sys.argv.
