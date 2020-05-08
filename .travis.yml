@@ -1,5 +1,4 @@
 language: python
-warnings_are_errors: false
 
 install:
   - pip install -r docs/requirements.txt
@@ -16,7 +15,7 @@ deploy:
   allow_empty_commit: true
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: docs/site
+  local_dir: site
 
 deploy:
   provider: pypi
