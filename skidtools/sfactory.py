@@ -37,7 +37,7 @@ def generate_credentials(engine: str = "name", prefix: Optional[str] = None) -> 
         engine: This defines the pattern used to generate the credentials, number generates using only numbers, leter genrates using only letters,
                 name generates a random realistic name using the Faker module, mix is a combination of numbers and letters. This doesn't effect password
                 genration or email. The email is in the username@skid.dev format.
-        perfix: Optional argument which prefixes the given string to the the generated username and email
+        prefix: Optional argument which prefixes the given string to the the generated username and email
 
     Returns:
         A dict with with they keys: firstname, lastname, username, email, password
