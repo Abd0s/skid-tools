@@ -1,4 +1,5 @@
 language: python
+warnings_are_errors: false
 
 install:
   - pip install -r docs/requirements.txt
