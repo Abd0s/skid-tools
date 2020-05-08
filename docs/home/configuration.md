@@ -12,7 +12,7 @@ directory as your projects entry point.
 - `help_text: str = "A simple help accesed through --help"`  
   Your projects help text, displayed with `--help` if `init_logging()` is used.
 
-### slogging <small>logging modules must be initilized with `init_logging()`</small>
+### slogging <small>logging modules must be initialized with `init_logging()`</small>
 - `log_to_file: bool = False`  
   If `True` logs all logs to a `.log` file in a /logs folder relative to your root directory
 - `debug: bool = False`  
