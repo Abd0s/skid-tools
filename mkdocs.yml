@@ -15,27 +15,27 @@ copyright: Copyright &copy; 2020 Clast
 # Page tree
 nav:
   - Home: 
-    - Introduction: "docs/index.md"
-    - Getting started: "docs/home/getting-started.md"
-    - CLI Commands: "docs/home/commands.md"
-    - Modules: "docs/home/modules.md"
-    - Configuration: "docs/home/configuration.md"
-    - Tests: "docs/home/tests.md"
-    - Contributing: "docs/home/contributing.md"
-    - License: "docs/home/license.md"
+    - Introduction: "index.md"
+    - Getting started: "home/getting-started.md"
+    - CLI Commands: "home/commands.md"
+    - Modules: "home/modules.md"
+    - Configuration: "home/configuration.md"
+    - Tests: "home/tests.md"
+    - Contributing: "home/contributing.md"
+    - License: "home/license.md"
   - Modules:
-      - IO: "docs/modules/io.md"
-      - Logging: "docs/modules/logging.md"
-      - Factory: "docs/modules/factory.md"
-      - Parsing: "docs/modules/parsing.md"
+      - IO: "modules/io.md"
+      - Logging: "modules/logging.md"
+      - Factory: "modules/factory.md"
+      - Parsing: "modules/parsing.md"
   - API reference:
-      - IO: "docs/api-reference/reference-io.md"
-      - Logging: "docs/api-reference/reference-logging.md"
-      - Parsing: "docs/api-reference/reference-parsing.md"
-      - Factory: "docs/api-reference/reference-factory.md"
-      - Exceptions: "docs/api-reference/reference-exceptions.md"
+      - IO: "api-reference/reference-io.md"
+      - Logging: "api-reference/reference-logging.md"
+      - Parsing: "api-reference/reference-parsing.md"
+      - Factory: "api-reference/reference-factory.md"
+      - Exceptions: "api-reference/reference-exceptions.md"
   - Releases:
-    - Changelog: "docs/releases/changelog.md"
+    - Changelog: "releases/changelog.md"
 
   
 
@@ -52,11 +52,11 @@ theme:
     code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
-  logo: docs/assets/icon.svg
-  favicon: docs/assets/icon.png
+  logo: assets/icon.svg
+  favicon: assets/icon.png
 
 extra_css:
-  - docs/assets/stylesheets/extra.css
+  - assets/stylesheets/extra.css
 
 extra:
   social:
